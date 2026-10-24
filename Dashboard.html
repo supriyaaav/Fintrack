@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINTRACK - Personal Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <h2 class="logo">FINTRACK</h2>
+        <nav>
+            <a href="Dashboard.html">Dashboard</a>
+            <a href="Transaction.html">Transaction</a>
+            <a href="Budget.html">Budget</a>
+            <a href="Report.html">Report</a>
+            <a href="Profile.html">Profile</a>
+        </nav>
+        <a href="#" class="logout">Logout</a>
+    </aside>
+    <main class="main-content">
+        
+        <header class="header">
+
+            <div>
+                <h1>Dashboard</h1>
+                <p>Welcome!! Here's your financial overview.</p>
+            </div>
+            <div class="header-buttons">
+                 
+                <button class="add-expense-btn">+ Add Expense</button>
+               
+            </div>
+        </header>
+
+
+        <section class="summary-cards">
+
+            <div class="card balance-card">
+                <div class="card-top">
+                  <span>Total Balance</span>
+                  <span class="card-icon">₹</span>
+                </div>
+
+                 <h2>₹25,000</h2>
+                 <p>Available balance</p>
+            </div>
+
+
+            <div class="card income-card">
+               <div class="card-top">
+                  <span>Total Income</span>
+                  <span class="card-icon">↗</span>
+                </div>
+
+                  <h2>₹40,000</h2>
+                  <p>This month</p>
+            </div>
+
+
+             <div class="card expense-card">
+                  <div class="card-top">
+                     <span>Total Expense</span>
+                     <span class="card-icon">↘</span>
+                  </div>
+
+                    <h2>₹15,000</h2>
+                     <p>This month</p>
+            </div>
+
+        </section>
+
+
+          
+
+<section class="chart-section">
+
+    <div class="section-header">
+        <div>
+            <h2>Expense Overview</h2>
+            <p>Monthly expenses</p>
+        </div>
+
+        <select class="chart-filter">
+            <option>2026</option>
+            <option>2025</option>
+        </select>
+    </div>
+
+
+    <div class="chart">
+
+        <div class="bar-item">
+            <div class="bar" style="height: 45%;"></div>
+            <span>Jan</span>
+        </div>
+
+        <div class="bar-item">
+            <div class="bar" style="height: 60%;"></div>
+            <span>Feb</span>
+        </div>
+
+        <div class="bar-item">
+            <div class="bar" style="height: 40%;"></div>
+            <span>Mar</span>
+        </div>
+
+        <div class="bar-item">
+            <div class="bar" style="height: 75%;"></div>
+            <span>Apr</span>
+        </div>
+
+        <div class="bar-item">
+            <div class="bar" style="height: 55%;"></div>
+            <span>May</span>
+        </div>
+
+        <div class="bar-item">
+            <div class="bar" style="height: 85%;"></div>
+            <span>Jun</span>
+        </div>
+
+        <div class="bar-item">
+            <div class="bar" style="height: 65%;"></div>
+            <span>Jul</span>
+        </div>
+
+        <div class="bar-item">
+            <div class="bar" style="height: 50%;"></div>
+            <span>Aug</span>
+        </div>
+
+    </div>
+
+</section>
+
+        <section class="transactions">
+            <div class="section-header">
+                <h2>Recent Transaction</h2>
+                <a href="Transaction.html">View All</a>
+
+            </div>
+
+            <div class="transaction-list">
+                <div class="transaction">
+                    <div>
+                        <h3>Food</h3>
+                        <p>Today</p>
+                    </div>
+                    <span>- ₹250 </span>
+
+                </div>
+
+
+                <div class="transaction">
+                    <div>
+                        <h3>Shopping</h3>
+                        <p>Yesterday</p>
+
+                   </div>
+                 <span>- ₹800</span>
+                </div>
+
+                <div class="transaction">
+                    <div>
+                        <h3>Personal Expences</h3>
+                        <p>Yesterday</p>
+                    </div>
+                   <span>- ₹800</span>
+                </div>   
+                
+            </div>
+
+        </section>
+            
+        
+    </main>
+</body>
+</html>

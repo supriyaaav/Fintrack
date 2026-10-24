@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINTRACK-Tansaction</title>
+    <link rel="stylesheet" href="trans-style.css">
+
+</head>
+<body>
+    <aside class="sidebar">
+        <h2 class="logo">FINTRACK</h2>
+        <nav>
+            <a href="Dashboard.html">Dashboard</a>
+            <a href="Transaction.html" class="active">Tranctions</a>
+            <a href="Budget.html">Budget</a>
+            <a href="Report.html">Report</a>
+            <a href="Profile.html">Profile</a>
+            
+        </nav>
+        <a href="#" class="logout">Logout</a>
+    </aside>
+    <main class="main-content">
+        <header class="header">
+            <div>
+                <h1>Transactions</h1>
+                <p>Track and manage your income and expenses.</p>
+            </div>
+            <div class="header-bottons">
+                <button class="add-expense-btn">
+                    +Add Transaction
+                </button>
+
+            </div>
+        </header>
+
+        <section class="summary-cards">
+            <div class="balance-card">
+                <div class="card-top">
+                    <span>Total Transacttion</span>
+                    <span class="card-icon">#</span>
+                </div>
+                <h2>24</h2>
+                <p>This month</p>
+            </div>
+
+
+            <div class="income-card">
+                <div class="card-top">
+                    <span>Total Income</span>
+                    <span class="card-icon">↗</span>
+                </div>
+                <h2>40,000</h2>
+                <p>This month</p>
+            </div>
+
+
+            <div class="expense-card">
+                <div class="card-top">
+                    <span>Total Expense</span>
+                    <span class="card-icon">↘</span>
+                </div>
+                <h2>₹10,000</h2>
+                <p>This month</p>
+            </div>
+        </section>
+
+        <section class="transaction-box" >
+            <div class="filter-section">
+                <input type="text" placeholder="Search transactioons.." class="search-input" >
+
+                <select class="filter-section1">
+                    <option>Payment Mode</option>
+                    <option>Cash</option>
+                    <option>UPI</option>
+                    <option>Credit Card</option>
+                </select>
+                <select class="filter-select2">
+                    <option>All categoroes</option>
+                    <option>Food</option>
+                    <option>Shopping</option>
+                    <option>Travels</option>
+                    <option>Bills</option>
+                    <option>Entertainment</option>
+
+                </select>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><h2>Transaction</h2></th>
+                            <th><h2>Category</h2></th>
+                            <th><h2>Date</h2></th>
+                            <th><h2>Type</h2></th>
+                            <th><h2>Amount</h2></th>
+                            <th><h2>Remark</h2></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong>Salary</strong>
+                            </td>
+
+                            <td>
+                                <strong>Income</strong>
+                            </td>
+
+                            <td>
+                                <strong>10 sep</strong>
+                            </td>
+
+                            <td>
+                                <span class="incomeo-badge">Income</span>
+                            </td>
+
+                            <td class="income-text">
+                                + ₹40,000
+                            </td>
+
+                            <td>sep salary</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <strong>Food</strong>
+                            </td>
+
+                            <td>Food</td>
+                            <td>18 Aug 2017</td>
+
+                            <td>
+                                <span class="expense-badge">Expense</span>
+                            </td>
+                            <td class="expense-text">250</td>
+
+                            <td>Lunch</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <strong>Shopping</strong>
+                            </td>
+                            <td>Shopping</td>
+                            <td>17 aug 2017</td>
+                            <td>
+                                <span class="expense-badge">
+                                    Expense
+                                </span>
+                            </td>
+
+                            <td class="expense-text">
+                            -800
+                            </td>
+
+                            <td>Purchase clothes</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <strong>Electricity Bill</strong>
+                            </td>
+
+                            <td>
+                                Bills
+                            </td>
+
+                            <td>15 aug 2017</td>
+
+                            <td>
+                                <span class="expense-badge">Expense</span>
+                            </td>
+
+                            <td class="expense-text">- ₹1,200</td>
+
+                            <td>Monthly Electricity Bill</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <strong>Bus Travel</strong>
+                            </td>
+                            <td>Travel</td>
+                            <td>13 aug 8123</td>
+
+                            <td>
+                                <span class="expense-badge">Expecse</span>
+                            </td>
+
+                            <td class="expense-text"> -₹500</td>
+
+                            <td>Office Trip</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profile - Finance Tracker</title>
+
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <h2 class="logo">FINTRACK</h2>
+        <nav>
+            <a href="Dashboard.html">Dashboard</a>
+            <a href="Transaction.html">Transaction</a>
+            <a href="Budget.html">Budget</a>
+            <a href="Report.html">Report</a>
+            <a href="Profile.html">Profile</a>
+        </nav>
+        <a href="#" class="logout">Logout</a>
+    </aside>
+
+    <main class="main-content">
+
+        <div class="top-bar">
+
+            <div>
+                <h1>My Profile</h1>
+                <p>Manage your account and preferences</p>
+            </div>
+
+            <button class="edit-btn">Edit Profile</button>
+
+        </div>
+
+        <section class="profile-card">
+
+            <div class="profile-header">
+
+                <div class="avatar">
+                    VT
+                </div>
+
+                <div class="profile-name">
+                    <h2>Vansh Thakur</h2>
+                    <p>vansh@example.com</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Account Information</h2>
+
+            <div class="info-grid">
+
+                <div class="info-item">
+                    <label>Full Name</label>
+                    <p>Vansh Thakur</p>
+                </div>
+
+                <div class="info-item">
+                    <label>Email Address</label>
+                    <p>vansh@example.com</p>
+                </div>
+
+                <div class="info-item">
+                    <label>Phone Number</label>
+                    <p>+91 98765 43210</p>
+                </div>
+
+                <div class="info-item">
+                    <label>Member Since</label>
+                    <p>August 2026</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Financial Preferences -->
+        <section class="card">
+
+            <h2>Financial Preferences</h2>
+
+            <div class="preference">
+
+                <div>
+                    <h3>Monthly Budget</h3>
+                    <p>Your overall monthly spending limit</p>
+                </div>
+
+                <strong>₹30,000</strong>
+
+            </div>
+
+
+            <div class="preference">
+
+                <div>
+                    <h3>Default Currency</h3>
+                    <p>Currency used for your transactions</p>
+                </div>
+
+                <strong>INR (₹)</strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- Notification Settings -->
+        <section class="card">
+
+            <h2>Notifications</h2>
+
+
+            <div class="setting">
+
+                <div>
+                    <h3>Budget Alerts</h3>
+                    <p>
+                        Get notified when you are close to your budget limit
+                    </p>
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox" checked>
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+
+            <div class="setting">
+
+                <div>
+                    <h3>Weekly Spending Summary</h3>
+                    <p>
+                        Receive a weekly summary of your spending
+                    </p>
+                </div>
+
+                <label class="switch">
+
+                    <input type="checkbox">
+
+                    <span class="slider"></span>
+
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <!-- Logout -->
+        <button class="logout-btn">
+            Logout
+        </button>
+
+    </main>
+
+</body>
+</html>

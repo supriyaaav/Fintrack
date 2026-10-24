@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reports - Finance Tracker</title>
+
+    <link rel="stylesheet" href="Repo-style.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <h2 class="logo">FINTRACK</h2>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="Transaction.html">Transaction</a>
+            <a href="Budget.html">Budget</a>
+            <a href="Report.html">Report</a>
+            <a href="Profile.html">Profile</a>
+        </nav>
+        <a href="#" class="logout">Logout</a>
+    </aside>
+
+    <main class="main-content">
+
+        <!-- Header -->
+        <div class="top-bar">
+
+            <div>
+                <h1>Financial Reports</h1>
+                <p>Understand your spending and financial habits</p>
+            </div>
+
+            <div class="header-actions">
+
+                <select class="date-select">
+                    <option>This Month</option>
+                    <option>Last Month</option>
+                    <option>Last 3 Months</option>
+                    <option>This Year</option>
+                </select>
+
+                <button class="download-btn">
+                    Download Report
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Summary Cards -->
+        <section class="summary-grid">
+
+            <div class="summary-card">
+
+                <div class="card-icon income-icon">
+                    ₹
+                </div>
+
+                <div>
+                    <p>Total Income</p>
+                    <h2>₹50,000</h2>
+                    <span class="positive">
+                        +8.5% from last month
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="card-icon expense-icon">
+                    ₹
+                </div>
+
+                <div>
+                    <p>Total Expenses</p>
+                    <h2>₹32,450</h2>
+                    <span class="negative">
+                        +4.2% from last month
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="card-icon saving-icon">
+                    ₹
+                </div>
+
+                <div>
+                    <p>Total Savings</p>
+                    <h2>₹17,550</h2>
+                    <span class="positive">
+                        +12.3% from last month
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <div class="card-icon rate-icon">
+                    %
+                </div>
+
+                <div>
+                    <p>Savings Rate</p>
+                    <h2>35.1%</h2>
+                    <span class="positive">
+                        Good progress
+                    </span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Spending Overview -->
+        <section class="card">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Spending Overview</h2>
+                    <p>Your expenses across different categories</p>
+                </div>
+
+                <span class="total-expense">
+                    Total: ₹32,450
+                </span>
+
+            </div>
+
+
+            <!-- Food -->
+            <div class="category-row">
+
+                <div class="category-info">
+
+                    <div class="category-name">
+                        <span class="category-dot food"></span>
+                        Food
+                    </div>
+
+                    <span>₹8,500</span>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar food-bar"></div>
+                </div>
+
+                <span class="percentage">
+                    26.2%
+                </span>
+
+            </div>
+
+
+            <!-- Shopping -->
+            <div class="category-row">
+
+                <div class="category-info">
+
+                    <div class="category-name">
+                        <span class="category-dot shopping"></span>
+                        Shopping
+                    </div>
+
+                    <span>₹6,800</span>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar shopping-bar"></div>
+                </div>
+
+                <span class="percentage">
+                    21.0%
+                </span>
+
+            </div>
+
+
+            <!-- Bills -->
+            <div class="category-row">
+
+                <div class="category-info">
+
+                    <div class="category-name">
+                        <span class="category-dot bills"></span>
+                        Bills & Utilities
+                    </div>
+
+                    <span>₹5,400</span>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar bills-bar"></div>
+                </div>
+
+                <span class="percentage">
+                    16.6%
+                </span>
+
+            </div>
+
+
+            <!-- Entertainment -->
+            <div class="category-row">
+
+                <div class="category-info">
+
+                    <div class="category-name">
+                        <span class="category-dot entertainment"></span>
+                        Entertainment
+                    </div>
+
+                    <span>₹4,250</span>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar entertainment-bar"></div>
+                </div>
+
+                <span class="percentage">
+                    13.1%
+                </span>
+
+            </div>
+
+
+            <!-- Transport -->
+            <div class="category-row">
+
+                <div class="category-info">
+
+                    <div class="category-name">
+                        <span class="category-dot transport"></span>
+                        Transport
+                    </div>
+
+                    <span>₹3,500</span>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar transport-bar"></div>
+                </div>
+
+                <span class="percentage">
+                    10.8%
+                </span>
+
+            </div>
+
+
+            <!-- Others -->
+            <div class="category-row">
+
+                <div class="category-info">
+
+                    <div class="category-name">
+                        <span class="category-dot others"></span>
+                        Others
+                    </div>
+
+                    <span>₹4,000</span>
+
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar others-bar"></div>
+                </div>
+
+                <span class="percentage">
+                    12.3%
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- Two Column Section -->
+        <div class="two-column">
+
+
+            <!-- Monthly Summary -->
+            <section class="card">
+
+                <div class="section-header">
+
+                    <div>
+                        <h2>Monthly Summary</h2>
+                        <p>Income vs expenses</p>
+                    </div>
+
+                </div>
+
+
+                <div class="chart">
+
+                    <div class="chart-row">
+
+                        <span>Jan</span>
+
+                        <div class="chart-bars">
+                            <div class="income-bar" style="height: 70%;"></div>
+                            <div class="expense-bar" style="height: 45%;"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="chart-row">
+
+                        <span>Feb</span>
+
+                        <div class="chart-bars">
+                            <div class="income-bar" style="height: 75%;"></div>
+                            <div class="expense-bar" style="height: 50%;"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="chart-row">
+
+                        <span>Mar</span>
+
+                        <div class="chart-bars">
+                            <div class="income-bar" style="height: 85%;"></div>
+                            <div class="expense-bar" style="height: 55%;"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="chart-row">
+
+                        <span>Apr</span>
+
+                        <div class="chart-bars">
+                            <div class="income-bar" style="height: 90%;"></div>
+                            <div class="expense-bar" style="height: 60%;"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="chart-row">
+
+                        <span>May</span>
+
+                        <div class="chart-bars">
+                            <div class="income-bar" style="height: 80%;"></div>
+                            <div class="expense-bar" style="height: 65%;"></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="chart-row">
+
+                        <span>Jun</span>
+
+                        <div class="chart-bars">
+                            <div class="income-bar" style="height: 95%;"></div>
+                            <div class="expense-bar" style="height: 62%;"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Legend -->
+                <div class="legend">
+
+                    <div>
+                        <span class="legend-dot income-dot"></span>
+                        Income
+                    </div>
+
+                    <div>
+                        <span class="legend-dot expense-dot"></span>
+                        Expenses
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Top Spending Categories -->
+            <section class="card">
+
+                <div class="section-header">
+
+                    <div>
+                        <h2>Top Spending</h2>
+                        <p>Highest expense categories</p>
+                    </div>
+
+                </div>
+
+
+                <div class="top-category">
+
+                    <div class="rank">
+                        1
+                    </div>
+
+                    <div class="category-details">
+
+                        <h3>Food</h3>
+                        <p>₹8,500 spent</p>
+
+                    </div>
+
+                    <strong>
+                        26.2%
+                    </strong>
+
+                </div>
+
+
+                <div class="top-category">
+
+                    <div class="rank">
+                        2
+                    </div>
+
+                    <div class="category-details">
+
+                        <h3>Shopping</h3>
+                        <p>₹6,800 spent</p>
+
+                    </div>
+
+                    <strong>
+                        21.0%
+                    </strong>
+
+                </div>
+
+
+                <div class="top-category">
+
+                    <div class="rank">
+                        3
+                    </div>
+
+                    <div class="category-details">
+
+                        <h3>Bills & Utilities</h3>
+                        <p>₹5,400 spent</p>
+
+                    </div>
+
+                    <strong>
+                        16.6%
+                    </strong>
+
+                </div>
+
+
+                <div class="top-category">
+
+                    <div class="rank">
+                        4
+                    </div>
+
+                    <div class="category-details">
+
+                        <h3>Entertainment</h3>
+                        <p>₹4,250 spent</p>
+
+                    </div>
+
+                    <strong>
+                        13.1%
+                    </strong>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
