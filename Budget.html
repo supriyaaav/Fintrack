@@ -1,592 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>FINTRACK - Budget</title>
-
     <link rel="stylesheet" href="budget-style.css">
-
 </head>
-
-
 <body>
-
     <aside class="sidebar">
-
         <h2 class="logo">
             FINTRACK
         </h2>
-
-
         <nav>
-
             <a href="Dashboard.html">
                 Dashboard
             </a>
-
             <a href="Transaction.html">
                 Transactions
             </a>
-
             <a href="Budget.html" class="active">
                 Budget
             </a>
-
             <a href="Report.html">
                 Reports
             </a>
-
             <a href="Profile.html">
                 Profile
             </a>
-
         </nav>
-
-
         <a href="#" class="logout">
             Logout
         </a>
-
     </aside>
 
     <main class="main-content">
-
         <header class="header">
-
             <div>
-
                 <h1>
                     Budget
                 </h1>
-
                 <p>
                     Plan and manage your monthly spending.
                 </p>
-
             </div>
-
-
             <div class="header-buttons">
-
                 <button class="add-budget-btn">
                     + Add Budget
                 </button>
-
             </div>
-
         </header>
-
         <section class="summary-cards">
-
             <div class="card budget-card">
-
                 <div class="card-top">
-
                     <span>
                         Monthly Budget
                     </span>
-
                     <span class="card-icon">
                         ₹
                     </span>
-
                 </div>
-
-
                 <h2>
                     ₹30,000
                 </h2>
-
-
                 <p>
                     August 2026
                 </p>
-
             </div>
-
             <div class="card budget-expense-card">
-
                 <div class="card-top">
-
                     <span>
                         Total Spent
                     </span>
-
                     <span class="card-icon">
                         ↘
                     </span>
-
                 </div>
-
-
                 <h2>
                     ₹15,000
                 </h2>
-
-
                 <p>
                     50% of budget used
                 </p>
-
             </div>
-
             <div class="card budget-remaining-card">
-
                 <div class="card-top">
-
                     <span>
                         Remaining
                     </span>
-
                     <span class="card-icon">
                         ✓
                     </span>
-
                 </div>
-
-
                 <h2>
                     ₹15,000
                 </h2>
-
-
                 <p>
                     Available this month
                 </p>
-
             </div>
-
         </section>
-
         <section class="budget-overview">
-
-
             <div class="section-title">
-
                 <div>
-
                     <h2>
                         Overall Budget
                     </h2>
-
                     <p>
                         Your monthly spending progress
                     </p>
-
                 </div>
-
-
                 <span class="budget-percentage">
                     50%
                 </span>
 
             </div>
-
-
-            <!-- PROGRESS BAR -->
-
             <div class="progress-container">
-
                 <div
                     class="progress-bar overall-progress"
                     style="width: 50%;">
                 </div>
-
             </div>
-
-
             <div class="budget-numbers">
-
                 <span>
                     ₹15,000 spent
                 </span>
-
                 <span>
                     ₹30,000 budget
                 </span>
-
             </div>
-
         </section>
-
-
-
-        <!-- ================= CATEGORY BUDGET ================= -->
-
         <section class="category-section">
-
-
             <div class="section-heading">
-
                 <div>
-
                     <h2>
                         Category Budgets
                     </h2>
-
                     <p>
                         Track your spending by category.
                     </p>
-
                 </div>
-
             </div>
-
-
-
             <div class="budget-grid">
-
-
-                <!-- FOOD -->
-
                 <div class="budget-item">
-
                     <div class="budget-item-top">
-
                         <div>
-
                             <h3>
                                 Food
                             </h3>
-
                             <p>
                                 ₹4,000 spent
                             </p>
-
                         </div>
-
-
                         <strong>
                             ₹6,000
                         </strong>
-
                     </div>
-
-
                     <div class="progress-container">
-
                         <div
                             class="progress-bar food-progress"
                             style="width: 67%;">
                         </div>
-
                     </div>
-
-
                     <div class="budget-item-bottom">
-
                         <span>
                             67% used
                         </span>
-
                         <span>
                             ₹2,000 left
                         </span>
-
                     </div>
-
                 </div>
-
-
-
-                <!-- SHOPPING -->
-
                 <div class="budget-item">
-
                     <div class="budget-item-top">
-
                         <div>
-
                             <h3>
                                 Shopping
                             </h3>
-
                             <p>
                                 ₹3,000 spent
                             </p>
-
                         </div>
-
-
                         <strong>
                             ₹5,000
                         </strong>
-
                     </div>
-
-
                     <div class="progress-container">
-
                         <div
                             class="progress-bar shopping-progress"
                             style="width: 60%;">
                         </div>
-
                     </div>
-
-
                     <div class="budget-item-bottom">
-
                         <span>
                             60% used
                         </span>
-
                         <span>
                             ₹2,000 left
                         </span>
-
                     </div>
-
                 </div>
-
-
-
-                <!-- TRAVEL -->
-
                 <div class="budget-item">
-
                     <div class="budget-item-top">
-
                         <div>
-
                             <h3>
                                 Travel
                             </h3>
-
                             <p>
                                 ₹2,000 spent
                             </p>
-
                         </div>
-
-
                         <strong>
                             ₹3,000
                         </strong>
-
                     </div>
-
-
                     <div class="progress-container">
-
                         <div
                             class="progress-bar travel-progress"
                             style="width: 67%;">
                         </div>
-
                     </div>
-
-
                     <div class="budget-item-bottom">
-
                         <span>
                             67% used
                         </span>
-
                         <span>
                             ₹1,000 left
                         </span>
-
                     </div>
-
                 </div>
-
-
-
-                <!-- ENTERTAINMENT -->
-
                 <div class="budget-item">
-
                     <div class="budget-item-top">
-
                         <div>
-
                             <h3>
                                 Entertainment
                             </h3>
-
                             <p>
                                 ₹1,500 spent
                             </p>
-
                         </div>
-
-
                         <strong>
                             ₹3,000
                         </strong>
-
                     </div>
-
-
                     <div class="progress-container">
-
                         <div
                             class="progress-bar entertainment-progress"
                             style="width: 50%;">
                         </div>
-
                     </div>
-
-
                     <div class="budget-item-bottom">
-
                         <span>
                             50% used
                         </span>
-
                         <span>
                             ₹1,500 left
                         </span>
-
                     </div>
-
                 </div>
-
-
-
-                <!-- BILLS -->
-
                 <div class="budget-item">
-
                     <div class="budget-item-top">
-
                         <div>
-
                             <h3>
                                 Bills
                             </h3>
-
                             <p>
                                 ₹2,500 spent
                             </p>
-
                         </div>
-
-
                         <strong>
                             ₹5,000
                         </strong>
-
                     </div>
-
-
                     <div class="progress-container">
-
                         <div
                             class="progress-bar bills-progress"
                             style="width: 50%;">
                         </div>
-
                     </div>
-
-
                     <div class="budget-item-bottom">
-
                         <span>
                             50% used
                         </span>
-
                         <span>
                             ₹2,500 left
                         </span>
-
                     </div>
-
                 </div>
-
-
-
-                <!-- OTHER -->
-
                 <div class="budget-item">
-
                     <div class="budget-item-top">
-
                         <div>
-
                             <h3>
                                 Other
                             </h3>
-
                             <p>
                                 ₹2,000 spent
                             </p>
-
                         </div>
-
-
                         <strong>
                             ₹8,000
                         </strong>
-
                     </div>
-
-
                     <div class="progress-container">
-
                         <div
                             class="progress-bar other-progress"
                             style="width: 25%;">
                         </div>
-
                     </div>
-
-
                     <div class="budget-item-bottom">
-
                         <span>
                             25% used
                         </span>
-
                         <span>
                             ₹6,000 left
                         </span>
-
                     </div>
-
                 </div>
-
-
             </div>
-
         </section>
-
-
-
-        <!-- ================= BUDGET TIPS ================= -->
-
         <section class="budget-tip">
-
             <div class="tip-icon">
                 💡
             </div>
-
             <div>
-
                 <h3>
                     Budget Tip
                 </h3>
-
                 <p>
                     You have used 50% of your monthly budget.
                     Keep your spending under control to reach
                     your savings goal.
                 </p>
-
             </div>
-
         </section>
-
-
     </main>
-
-
 </body>
-
 </html>
